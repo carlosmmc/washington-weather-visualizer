@@ -1,5 +1,3 @@
-[Link to tool](www.google.com)
-
 <kbd><img src="images/readme_viz.gif" /></kbd>
 
 ### Description
