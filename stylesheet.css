@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+#container_card {
+    fill: #161f29;
+    border-radius: 25px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 0px;
+}
+
+.date_selection{
+    margin-left: 80px;
+}
+
+.data_selection{
+    margin-left: 100px;
+}
+
+.header{
+    text-indent: 20px;
+}
+
+.details{
+    margin-left: 20px;
+    position: absolute;
+    max-width:800px;
+}
+
+body, .header{
+    font-family: 'Roboto', sans-serif;
+}
+
+.tool_text {
+    fill: white;
+}
+
+.link_text {
+    fill: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px
+}
+
+.tip_header {
+    font-size: 30px;
+    fill: #757faf;
+    font-weight: 900;
+}
+
+.cat_desc {
+    fill: #757faf;
+}
+
+.cat_info {
+    font-size: 25px;
+    font-weight: 900;
+}

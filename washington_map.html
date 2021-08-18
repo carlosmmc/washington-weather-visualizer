@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<!-- add title -->
+    <title>Washington Weather Visualizer</title>
+    
+    <!-- import required libraries here -->
+    <script type="text/javascript" src="../lib/d3.v5.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-dsv.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-geo-projection.v2.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-legend.min.js"></script>
+    <script type="text/javascript" src="../lib/topojson.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- seperate css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+
+<body>
+    <!-- Webpage heading -->
+    <h1 class="header">Washington State Weather Visualizer</h1>
+
+    <span class="date_selection">
+        <!-- Select date -->
+        <label for="date_cal_select">Select Date:</label>
+        <input type="date" id="date_cal_select" name="date_cal_select">
+    </span>
+
+    <span class="data_selection">
+        <!-- Choose data category -->
+        <label for="data_select">Metric:</label>
+        <select name="data_select" id="data_select">
+            <option value="average_feel">Feels Like (Temperature - F)</option>
+            <option value="pop">Chance of Precipitation (%)</option>
+            <option value="clouds">Cloud Cover (%)</option>
+            <option value="wind_speed">Wind Speeds (mph)</option>
+        </select>
+    </span>
+
+    <div id="choropleth"></div>
+    <script type="text/javascript" src="choropleth.js"></script>
+    
+    <span class="details">
+    <p>Analyze the weather for the following eight days by reviewing the following categories:</p>
+    <ul>
+        <li><u>Feels Like (Temperature - F)</u> - The “feels like” averaged between the morning, day, evening and night temperature.</li>
+        <li><u>Chance of Precipitation (%)</u> - The percent chance of precipitation (includes rain & snow).</li>
+        <li><u>Cloud Cover (%)</u> - The percent of the sky that will be covered with clouds.</li>
+        <li><u>Wind Speeds (mph)</u> - The average projected wind speeds.</li>
+    </ul>
+    <h4>Purpose</h4>
+    <p>The motivation behind this tool was the lack of a weather filter on <a href="https://www.alltrails.com/">All Trails</a>. Before having this, the only way I could find which hikes had good weather was to manually check the forecast on many zip codes until I found something suitable.</p>
+    <h4>Data Origin</h4>
+    <p>The weather data comes from <a href="https://openweathermap.org/">OpenWeather</a>.</p>
+    <h4>Code Repo</h4>
+    <p>If interested in the code used to generate this, check out my <a href="https://github.com/carlosmmc/washington-weather-visualizer">GitHub</a>(update once public repo is ready).</p>
+    </span>
+</body>
+
+</html>
