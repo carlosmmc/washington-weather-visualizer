@@ -5,13 +5,9 @@
         sd = n.getDate();
         ed = sd + 8;
 
-        // document.getElementById("date_cal_select").min = y + '-' + m + '-' + sd
-        // document.getElementById("date_cal_select").max = y + '-' + m + '-' + ed
-        // document.getElementById("date_cal_select").value = y + '-' + m + '-' + sd
-
-        document.getElementById("date_cal_select").min = '2021' + '-' + '07' + '-' + '19'
-        document.getElementById("date_cal_select").max = '2021' + '-' + '07' + '-' + '26'
-        document.getElementById("date_cal_select").value = '2021' + '-' + '07' + '-' + '19'
+        document.getElementById("date_cal_select").min = y + '-' + m + '-' + sd
+        document.getElementById("date_cal_select").max = y + '-' + m + '-' + ed
+        document.getElementById("date_cal_select").value = y + '-' + m + '-' + sd
 
         var height = 550;
         var width = 800;
